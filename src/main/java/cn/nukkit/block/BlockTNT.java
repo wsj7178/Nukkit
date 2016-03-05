@@ -4,6 +4,7 @@ import cn.nukkit.Player;
 import cn.nukkit.entity.Entity;
 import cn.nukkit.entity.item.EntityPrimedTNT;
 import cn.nukkit.item.Item;
+import cn.nukkit.level.sound.TNTPrimeSound;
 import cn.nukkit.math.NukkitRandom;
 import cn.nukkit.nbt.tag.CompoundTag;
 import cn.nukkit.nbt.tag.DoubleTag;
@@ -68,12 +69,13 @@ public class BlockTNT extends BlockSolid {
                     .putList(new ListTag<FloatTag>("Rotation")
                             .add(new FloatTag("", 0))
                             .add(new FloatTag("", 0)))
-                    .putByte("Fuse", (byte) 80);
+                    .putByte("Fuse", 80);
             Entity tnt = new EntityPrimedTNT(
                     this.getLevel().getChunk(this.getFloorX() >> 4, this.getFloorZ() >> 4),
                     nbt
             );
             tnt.spawnToAll();
+            this.level.addSound(new TNTPrimeSound(this));
             return true;
         }
         return false;

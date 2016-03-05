@@ -7,7 +7,6 @@ import cn.nukkit.event.entity.EntityCombustByBlockEvent;
 import cn.nukkit.event.entity.EntityDamageByBlockEvent;
 import cn.nukkit.event.entity.EntityDamageEvent;
 import cn.nukkit.item.Item;
-import cn.nukkit.level.Level;
 import cn.nukkit.potion.Effect;
 import cn.nukkit.utils.BlockColor;
 
@@ -38,14 +37,6 @@ public class BlockLava extends BlockLiquid {
     @Override
     public String getName() {
         return "Lava";
-    }
-
-    @Override
-    public int tickRate() {
-        if (this.getLevel().getDimension() == Level.DIMENSION_NETHER) {
-            return 5;
-        }
-        return 30;
     }
 
     @Override

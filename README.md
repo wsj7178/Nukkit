@@ -18,9 +18,9 @@ Nukkit
 
 __A Nuclear-Powered Server Software For Minecraft: Pocket Edition__
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Nukkit/Nukkit)
-[![Build Status](https://travis-ci.org/Nukkit/Nukkit.svg)](https://travis-ci.org/Nukkit/Nukkit)
-[![Circle CI](https://circleci.com/gh/Nukkit/Nukkit.svg?style=svg)](https://circleci.com/gh/Nukkit/Nukkit)
+[![Gitter](https://img.shields.io/gitter/room/Nukkit/Nukkit.js.svg?style=flat)](https://gitter.im/Nukkit/Nukkit)
+
+[![Travis](https://img.shields.io/travis/Nukkit/Nukkit.svg?style=flat)](https://travis-ci.org/Nukkit/Nukkit)
 
 -------------
 
@@ -31,6 +31,7 @@ Get Nukkit
 
 Introduction
 -------------
+
 Nukkit is nuclear-powered server software for Minecraft: Pocket Edtion.
 It has a few key advantages over PocketMine-MP:
 
